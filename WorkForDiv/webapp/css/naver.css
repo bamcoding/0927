@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+.block {
+	display:inline-block;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.gray {
+	color:gray;
+}
+
+.cols {
+	margin-right:15px;
+}
+
+.green {
+	color:green;
+}
+
+#one {
+	margin:15px
+}
+
+#first {
+	color:blue;
+	text-decoration: underline;
+	margin:3px;
+}
+
+#second {
+	margin:3px;
+}
+
+#third {
+	margin:3px;
+}
