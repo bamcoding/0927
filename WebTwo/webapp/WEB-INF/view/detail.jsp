@@ -4,6 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/WebTwo/css/web.css">
+
 <script type="text/javascript">
 	
 </script>
@@ -12,17 +14,18 @@
 <body>
 <h1>Site Title</h1>
 <hr/>
-<div>제목</div>
-<div>작성자
-날짜
-<img src="/WebTwo/img/hit.jpg"/> 조회수 
-<img src="/WebTwo/img/like.jpg"/>좋아요</div>
-<div><img src="/WebTwo/img/file.jpg"/>첨부파일</div>
-<div>내용</div>
+<div style="font-size: 20px;font-weight: bold">${vo.subject }</div>
 
-<a href="">삭제</a>
-<a href="">수정</a>
-<a href="">목록보기</a>
+<div class="block" style="margin-right:20px">${vo.author }</div>
+<div class="block" style="margin-right:20px">${vo.date }</div><div class="block">
+<img src="/WebTwo/img/hit.jpg"/> ${vo.hitCount } 
+<img src="/WebTwo/img/like.jpg"/>${vo.likeCount }</div>
+<div><img src="/WebTwo/img/file.jpg"/>첨부파일.exe</div>
+<div style="height:200px">${vo.content }</div>
+
+<a href="./list">삭제</a>&nbsp;&nbsp;
+<a href="./modify?id=${vo.id }">수정</a>&nbsp;&nbsp;
+<a href="./list">목록보기</a>
 <hr/>
 </body>
 </html>

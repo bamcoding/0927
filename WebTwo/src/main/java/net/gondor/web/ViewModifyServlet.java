@@ -1,7 +1,6 @@
 package net.gondor.web;
 
 import java.io.IOException;
-import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -14,17 +13,16 @@ import net.gondor.dao.DaoImpl;
 import net.gondor.vo.VO;
 
 /**
- * Servlet implementation class ViewListServlet
+ * Servlet implementation class ViewWriteServlet
  */
-public class ViewListServlet extends HttpServlet {
+public class ViewModifyServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ViewListServlet() {
+    public ViewModifyServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
@@ -40,11 +38,12 @@ public class ViewListServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
+		String idParam = request.getParameter("id");
+		int id = Integer.parseInt(idParam);
 		Dao dao = new DaoImpl();
-		List<VO> vos = dao.getAll();
-		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/view/list.jsp");
-		request.setAttribute("vos", vos);
+		VO vo = dao.getOne(id);
+		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/view/modify.jsp");
+		request.setAttribute("vo", vo);
 		rd.forward(request, response);
 		
 	}

@@ -9,19 +9,26 @@
 <body>
 <h1>Site Title</h1>
 <hr/>
+<div class="one">
 <form>
-<div><input type="text" name="subject" placeholder="제목을 입력하세요."/>
-</div><div><textarea  name="content" placeholder="내용을 입력하세요."></textarea>
-</div><div><input type="checkbox"/>
+<div>
+<input style="width:100%" type="text" name="subject" value="${vo.subject }"/><br/>
+</div>
+<div style="margin-top:5px;margin-bottom:5px;">
+<textarea style="width:100%; height:300px" name="content" ">${vo.content }</textarea>
+</div>
+<div><input type="checkbox"/>
 <img src="/WebTwo/img/file.jpg"/>
 첨부파일.exe</div>
 <div>
-<input type="text" placeholder="파일을 선택하세요."/>
-<input type="button" value="파일 선택"/>
-<input type="button" value="뒤로가기"/>
-<input type="button" value="글쓰기"/>
+<div class="block" >
+<input style="width:50%;" type="text" placeholder="파일을 선택하세요."/>
+<input type="button" value="파일 선택"/></div>
+<div class="block" style="position:absolute; right:23px;">
+<input type="button" value="뒤로가기" onclick="location.href='./list'"/>
+<input type="button" value="글쓰기" onclick="location.href='./list'"/></div>
 </div>
 </form>
-<hr/>
+</div>
 </body>
 </html>

@@ -5,8 +5,16 @@ public class VO {
 	private int hitCount;
 	private int likeCount;
 	private String subject;
+	private String content;
 	private String author;
 	private String date;
+	
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
 	public int getId() {
 		return id;
 	}
