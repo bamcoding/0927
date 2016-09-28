@@ -11,12 +11,12 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>SignUpServlet</display-name>
-    <servlet-name>SignUpServlet</servlet-name>
-    <servlet-class>net.gondor.web.SignUpServlet</servlet-class>
+    <display-name>ViewSignUpServlet</display-name>
+    <servlet-name>ViewSignUpServlet</servlet-name>
+    <servlet-class>net.gondor.web.ViewSignUpServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>SignUpServlet</servlet-name>
+    <servlet-name>ViewSignUpServlet</servlet-name>
     <url-pattern>/signUp</url-pattern>
   </servlet-mapping>
   <servlet>
@@ -28,16 +28,6 @@
   <servlet-mapping>
     <servlet-name>ViewListServlet</servlet-name>
     <url-pattern>/list</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>ViewWriteServlet</display-name>
-    <servlet-name>ViewWriteServlet</servlet-name>
-    <servlet-class>net.gondor.web.ViewWriteServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ViewWriteServlet</servlet-name>
-    <url-pattern>/write</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>
@@ -58,5 +48,25 @@
   <servlet-mapping>
     <servlet-name>ViewModifyServlet</servlet-name>
     <url-pattern>/modify</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ViewSignInServlet</display-name>
+    <servlet-name>ViewSignInServlet</servlet-name>
+    <servlet-class>net.gondor.web.ViewSignInServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewSignInServlet</servlet-name>
+    <url-pattern>/signIn</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ViewWriteServlet</display-name>
+    <servlet-name>ViewWriteServlet</servlet-name>
+    <servlet-class>net.gondor.web.ViewWriteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewWriteServlet</servlet-name>
+    <url-pattern>/write</url-pattern>
   </servlet-mapping>
 </web-app>

@@ -17,8 +17,8 @@
 				<input id="password" name="password" type="text"
 					placeholder="Password" />
 			</div>
-			<input type="button" id="join" value="Join"/> 
-			<input type="button" id="cancel" value="Cancel" />
+			<input type="button" id="join" value="Join" onclick="location.href='./list'"/> 
+			<input type="button" style="position:absolute; right:0px"" id="cancel" value="Cancel" />
 		</form>
 	</div>
 </body>

@@ -26,8 +26,8 @@
 					placeholder="Password Confirm" />
 			</div>
 			
-				<input type="button" id="join" value="Join" href="location.href='./signUp.jsp'"/>
-				<input type="button" id="cancel" value="Cancel"/>
+				<input type="button" id="join" value="Join" onclick="location.href='./signIn'"/>
+				<input type="button" style="position:absolute; right:0px;" id="cancel" value="Cancel"/>
 			
 		</form>
 	</div>

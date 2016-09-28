@@ -11,19 +11,19 @@
 <h1>Site Title</h1>
 <hr/>
 <div class="one">
-<form>
+<form id="writeForm">
 <div>
-<input style="width:100%" type="text" name="subject" placeholder="제목을 입력하세요."/><br/>
+<input style="width:100%" type="text" id="subject" name="subject" placeholder="제목을 입력하세요."/><br/>
 </div>
 <div style="margin-top:5px;margin-bottom:5px;">
-<textarea style="width:100%; height:300px" name="content" placeholder="내용을 입력하세요."></textarea>
+<textarea style="width:100%; height:300px" id="content" name="content" placeholder="내용을 입력하세요."></textarea>
 </div>
 <div>
 <div class="block" >
 <input style="width:50%;" type="text" placeholder="파일을 선택하세요."/>
 <input type="button" value="파일 선택"/></div>
 <div class="block" style="position:absolute; right:23px;">
-<input type="button" value="뒤로가기" onclick="location.href='./list'"/>
+<input type="button" id="backbtn" value="뒤로가기" onclick="location.href='./list'"/>
 <input type="button" value="글쓰기" onclick="location.href='./list'"/></div>
 </div>
 </form>

@@ -60,7 +60,7 @@ public class DaoImpl implements Dao {
 		for (int i = 0; i < vos.size(); i++) {
 			temp = vos.get(i).getId();
 			if(temp == id){
-				vo = vos.get(i+1);
+				vo = vos.get(i);
 				break;
 			}
 		}
