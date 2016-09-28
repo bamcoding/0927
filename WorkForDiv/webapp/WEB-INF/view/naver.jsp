@@ -6,6 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="/WorkForDiv/css/naver.css">
 <title>Naver</title>
+<%
+Thread.sleep(5000); 
+%>
 </head>
 <body>
 <div id="wrapper">
