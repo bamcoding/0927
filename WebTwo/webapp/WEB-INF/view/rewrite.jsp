@@ -21,7 +21,7 @@
 <div>
 <div class="block" >
 <input style="width:50%;" type="text" placeholder="파일을 선택하세요."/>
-<input type="button" value="파일 선택"/></div>
+<input type="file" value="파일 선택"/></div>
 <div class="block" style="position:absolute; right:23px;">
 <input type="button" value="뒤로가기" onclick="location.href='./list'"/>
 <input type="button" value="글쓰기" onclick="location.href='./list'"/></div>
